@@ -18,7 +18,8 @@
                 <label for="platform">Platform</label>
                 <div class="custom-select">
                     <div class="select-selected">
-                        <span>Select platform</span>
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="select-options">
@@ -35,7 +36,7 @@
                             <span>LinkedIn</span>
                         </div>
                     </div>
-                    <input type="hidden" name="platform" id="platform" required>
+                    <input type="hidden" name="platform" id="platform" value="facebook" required>
                 </div>
             </div>
             
@@ -114,7 +115,7 @@
             
             try {
                 // Send data to webhook and wait for response
-                const webhookResponse = await fetch('https://dipayan-pal.app.n8n.cloud/webhook-test/6ef89bc5-7b3e-453a-8000-fa9eeda91a56', {
+                const webhookResponse = await fetch('https://dipayan-pal.app.n8n.cloud/webhook/6ef89bc5-7b3e-453a-8000-fa9eeda91a56', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
